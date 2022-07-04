@@ -1,0 +1,200 @@
+.Home {
+  width: 100%;
+}
+
+.AboutUsSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 7vw;
+}
+
+.AboutUsSection .TextGroup {
+  width: 50%;
+  text-align: left;
+  margin-right: 1rem;
+}
+
+.AboutUsSection .TextGroup p {
+  margin-bottom: 1rem;
+}
+
+.AboutUsSection .TextGroup .TextHeader {
+  font-family: "f-extrabold";
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.AboutUsSection .AboutVideo {
+  width: 50%;
+}
+
+.AboutVideo img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.CloseBtnWrapper {
+  margin: 1rem auto;
+  margin-bottom: 0;
+}
+
+.CloseBtnWrapper .CloseBtn {
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+/* SUMMARY SECTION */
+
+.SummarySection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3rem 7vw;
+  background-color: #f7f7f7;
+}
+
+.SummarySection .SummaryCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SummaryCard .SummaryCount {
+  font-family: "f-bold";
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+.SummaryCard .SummaryTitle {
+  font-family: "f-semibold";
+}
+
+/* EVENTS */
+
+.TopListing {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 7vw;
+}
+
+.TopWorkshops {
+  background-color: var(--primary-color);
+}
+
+.TopListing .SectionHeader {
+  margin: 0rem auto;
+  font-size: 2rem;
+  font-family: "f-extrabold";
+}
+
+.TopWorkshops .SectionHeader {
+  color: #ffffff;
+}
+
+.TopListing .SliderSection {
+  margin: 2rem 0;
+}
+
+.TopWorkshops .RegisterWorkshop {
+  margin-top: 2rem;
+}
+
+.TopWorkshops .SectionDesc {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.TopWorkshops .SectionDesc a {
+  color: yellow;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.TopSpeakers {
+  background-image: url("../../assets/images/home/SpeakersBackround.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.TopSpeakers .SectionHeader {
+  color: #ffffff;
+}
+
+.Strategizer {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  border-radius: 2%;
+  background-color: var(--primary-color);
+  padding: 1rem 0.5rem;
+  width: 70px;
+  height: 150px;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.3s ease-out;
+  border: 1px solid #ffffff;
+}
+
+.Strategizer:hover {
+  opacity: 0.9;
+}
+
+.Strategizer p {
+  transform: rotate(-90deg);
+  transform-origin: 60% 70%;
+}
+
+.HomeSlider{
+  height: 54vw;
+  max-height: 60vh;
+}
+
+@media screen and (max-width: 768px) {
+  .AboutUsSection {
+    flex-direction: column;
+    padding: 2rem 4vw;
+  }
+
+  .AboutUsSection .TextGroup {
+    width: 100%;
+  }
+
+  .AboutUsSection .AboutVideo {
+    width: 100%;
+  }
+
+  .SummarySection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 3rem 5vw;
+  }
+
+  .SummarySection .SummaryCard {
+    margin: 1rem 0.8rem;
+  }
+
+  .SummarySection .SummaryCard img {
+    width: 15vw;
+  }
+
+  .SummarySection .SummaryCard .SummaryCount {
+    font-size: 1.5rem;
+  }
+
+  .SummarySection .SummaryCard .SummaryTitle {
+    font-size: 0.8rem;
+  }
+}

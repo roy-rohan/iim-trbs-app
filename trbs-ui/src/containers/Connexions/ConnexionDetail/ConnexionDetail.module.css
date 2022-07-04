@@ -1,0 +1,85 @@
+.Container {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  justify-content: space-evenly;
+}
+
+.Loader {
+  margin: auto;
+}
+
+.ImageContainer {
+  margin: 2rem;
+}
+
+.ImageContainer img {
+  height: 60vh;
+  box-shadow: 8px 8px 16px #a1a1a1, -8px -8px 16px #ffffff;
+  padding: 0.5rem;
+}
+
+.ShortInfo {
+  text-align: center;
+}
+
+.ShortInfo h2 {
+  margin: 0.5rem;
+}
+
+.FullInfo {
+  text-align: justify;
+  width: 70%;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.FullInfo .Topic {
+  font-size: 2rem;
+}
+
+.FullInfo .Introduction {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.FullInfo .Biography {
+  margin-bottom: 1rem;
+}
+
+.FullInfo .Designation {
+  margin-bottom: 1rem;
+}
+
+.FullInfo .Duration {
+  margin-bottom: 1rem;
+}
+
+.ActionButton {
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .Container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ImageContainer {
+    margin: 0rem;
+  }
+
+  .ImageContainer img {
+    width: 100%;
+  }
+
+  .ImageContainer {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .FullInfo {
+    width: 100%;
+    overflow-wrap: break-word;
+  }
+}

@@ -1,0 +1,38 @@
+.Success {
+  background-color: #39c16c;
+  color: #ffffff;
+}
+
+.Pending {
+  background-color: #f29339;
+  color: #ffffff;
+}
+
+.Failed {
+  background-color: #d9512c;
+  color: #ffffff;
+}
+
+.DataCell {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.CustomFilterContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0rem;
+  margin: 2rem;
+  margin-top: 0;
+}
+
+.CustomFilters {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.CustomFilterHeader {
+  text-align: left;
+}

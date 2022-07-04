@@ -1,0 +1,95 @@
+/* General Styles */
+
+.FormControl {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 1rem;
+  margin: 0.8rem 0.3rem;
+  --border-color: #d2d2d2;
+}
+
+.FormControl:hover {
+  --border-color: var(--primary-color);
+}
+
+.FormControl input {
+  padding: 0.3rem 0.5rem;
+}
+
+.FormControl input:hover,
+.FormControl input:active,
+.FormControl input:focus {
+  border: 2px solid var(--primary-color);
+}
+
+/* WithoutLabel */
+
+.FormControl.WithoutLabel input {
+  width: 100%;
+}
+
+/* StackedLabel */
+
+.FormControl.StackedLabel {
+  width: auto;
+}
+
+/* InlineLabel */
+
+.FormControl .InlineLabel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.FormControl .InlineLabel label {
+  width: 30%;
+}
+
+.FormControl .InlineLabel input {
+  width: 70%;
+}
+
+/* IconGroup */
+
+.FormControl .IconGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 2px solid;
+  width: 100%;
+  border: 2px solid var(--border-color);
+  transition: all 0.2s ease-in;
+}
+
+.FormControl .IconGroup svg {
+  width: 3rem;
+  color: #5f5581;
+}
+
+.FormControl .IconGroup input {
+  border: none;
+  border-left: 2px solid var(--border-color);
+  transition: all 0.2s ease-in;
+  width: calc(100% - 3rem);
+}
+
+.FormControl .IconGroup input:hover,
+.FormControl .IconGroup input:active,
+.FormControl .IconGroup input:focus {
+  border: none;
+  border-left: 2px solid var(--border-color);
+  outline: none;
+}
+
+/* MaterialUIInput */
+
+.MaterialUIInput {
+  color: var(--primary-color);
+  width: 90%;
+}
+
+.MaterialUIWrapper {
+  margin: 1rem 0;
+}

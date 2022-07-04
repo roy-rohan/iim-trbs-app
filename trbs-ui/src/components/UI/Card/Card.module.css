@@ -1,0 +1,49 @@
+.Card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: auto;
+  justify-content: space-between;
+  padding: 1.5rem 0rem;
+  padding-top: 0rem;
+  border-radius: 0.2rem;
+  border: 0.2rem solid #d1b2b2;
+  cursor: pointer;
+  bottom: 0px;
+  transition: all 0.3s ease-in;
+}
+
+.Card:hover {
+  position: relative;
+  bottom: 2px;
+}
+
+.Card.Light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.Card .Image {
+  width: 100%;
+  height: 450px;
+}
+
+.Card .CardTitle {
+  font-family: "f-semibold";
+  cursor: pointer;
+  width: 95%;
+  text-overflow: ellipsis;
+  white-space: nowrap;  text-align: justify;
+
+}
+
+.Card .ShortDesc {
+  text-align: justify;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  overflow: hidden;
+   width: 95%;
+  white-space: nowrap;
+}

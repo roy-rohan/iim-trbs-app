@@ -1,0 +1,83 @@
+export const initalValues = {
+  image_upload: {
+    value: null,
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  size: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  image_id: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  type: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    required: true,
+    touched: false,
+  },
+  new_type: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  visible: {
+    value: 0,
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  link: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  title: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    touched: false,
+    required: true,
+  },
+  view_order: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    required: true,
+    touched: false,
+  },
+  is_active: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  show_in_home_page: {
+    value: 0,
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  image_url: {
+    value: 0,
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  sponser_id: {
+    value: 0,
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+};

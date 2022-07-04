@@ -1,0 +1,45 @@
+.ContactUs .PageHeaderWrapper {
+  padding: 3rem 0;
+  background-color: var(--primary-color);
+}
+
+.PageHeaderWrapper .PageHeading {
+  color: #ffffff;
+  font-family: "f-extrabold";
+  text-align: center;
+}
+
+.ContentWrapper {
+  padding: 2rem 7vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ContentWrapper .ContactLinks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+.ContentWrapper .FormWrapper {
+  width: 40%;
+}
+
+.ContactLinks > div {
+  width: 40%;
+}
+
+@media (max-width: 768px) {
+  .ContentWrapper {
+    padding: 2rem 3vw;
+    flex-direction: column;
+  }
+  .ContentWrapper .ContactLinks {
+    width: 95%;
+  }
+  .ContentWrapper .FormWrapper {
+    width: 100%;
+  }
+}

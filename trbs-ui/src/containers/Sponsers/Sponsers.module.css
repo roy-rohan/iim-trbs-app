@@ -1,0 +1,90 @@
+.Sponsers {
+  display: flex;
+  flex-direction: column;
+}
+
+.Sponsers .PageHeaderWrapper {
+  padding: 3rem 0;
+  background-color: var(--primary-color);
+}
+
+.PageHeaderWrapper .PageHeading {
+  color: #ffffff;
+  font-family: "f-extrabold";
+  text-align: center;
+}
+
+.ContentWrapper {
+  padding: 2rem 7vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Section {
+  width: 100%;
+}
+.SectionHeader {
+  font-family: "f-bold";
+  font-size: 2rem;
+  text-align: center;
+  margin: 3rem auto;
+  text-transform: capitalize;
+}
+
+.SponsersRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Card {
+  max-width: 30%;
+  min-width: 360px;
+  padding: 1rem 0.5rem;
+  border-radius: 0.2rem;
+  border: 0.2rem solid #d1b2b2;
+  cursor: pointer;
+  bottom: 0px;
+  transition: all 0.3s ease-in;
+  margin: 1% 1.5%;
+}
+
+.Card .CardImage img {
+  width: 100%;
+  height: 270px;
+}
+
+.Card .Info {
+  margin: 0.8rem 0;
+}
+
+.CardTopic {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .SectionHeader {
+    font-size: 1.6rem;
+    margin: 2rem auto;
+  }
+
+  .Card {
+    min-width: 100%;
+    width: 45%;
+    margin: 2%;
+  }
+
+  .Card .CardImage img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .Card {
+    width: 100%;
+  }
+}

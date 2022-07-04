@@ -1,0 +1,96 @@
+/* For Footer */
+
+.FooterRole {
+  display: flex;
+  flex-direction: row;
+  padding: 1.5rem 0.5rem;
+  width: 47%;
+}
+
+.FooterRole .IconDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0.5rem;
+  padding-right: 1rem;
+}
+
+.FooterRole .IconDiv .Icon {
+  color: var(--primary-color);
+}
+
+.FooterRole .TextGroup {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  text-align: left;
+}
+
+.FooterRole .TextGroup .RoleDesc {
+  font-family: "f-bold";
+  font-size: 1.3rem;
+}
+
+.FooterRole .TextGroup .InCharge {
+  margin: 0.5rem 0;
+}
+
+.FooterRole .TextGroup .EmailID {
+  cursor: pointer;
+  color: rgb(61, 121, 231);
+}
+
+.FooterRole .PersonInvolved {
+  margin: 0.5rem 0;
+}
+
+/* For Contact Us Page */
+
+.ContactUsRole {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  width: 100%;
+}
+
+.ContactUsRole .IconDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0.5rem;
+  padding-right: 1rem;
+}
+
+.ContactUsRole .IconDiv .Icon {
+  color: var(--primary-color);
+}
+
+.ContactUsRole .TextGroup {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.ContactUsRole .TextGroup .RoleDesc {
+  font-family: "f-bold";
+  font-size: 1.2rem;
+}
+
+.ContactUsRole .TextGroup .InCharge {
+  margin: 0.5rem 0;
+}
+
+.ContactUsRole .TextGroup .EmailID {
+  cursor: pointer;
+  color: blue;
+}
+
+.ContactUsRole .PersonInvolved {
+  margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 425px) {
+  .FooterRole {
+    width: 100%;
+  }
+}

@@ -1,0 +1,44 @@
+.Button {
+  width: max-content;
+  border: none;
+  outline: none;
+  padding: 0.7rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+}
+
+.Button:hover {
+  outline: none;
+}
+
+.Primary {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: 0.2rem solid #ffffff;
+}
+
+.Primary:hover {
+  background-color: var(--primary-color-hover);
+}
+
+.Secondary {
+  border: #ffffff;
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.Center {
+  margin: auto;
+}
+
+.Left {
+  margin-right: auto;
+}
+
+.Right {
+  margin-left: auto;
+}

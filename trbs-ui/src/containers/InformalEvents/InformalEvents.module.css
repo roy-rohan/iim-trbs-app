@@ -1,0 +1,25 @@
+.InformalEventsWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.InformalEventsWrapper .PageHeaderWrapper {
+  padding: 3rem 0;
+  background-color: var(--primary-color);
+}
+
+.PageHeaderWrapper .PageHeading {
+  color: #ffffff;
+  font-family: "f-extrabold";
+  text-align: center;
+}
+
+.ContentWrapper {
+  margin: 3rem 4vw;
+}
+
+.ComingSoon {
+  color: var(--primary-color);
+  font-family: "f-bold";
+  font-size: 1.5rem;
+}

@@ -1,0 +1,78 @@
+.Strategizer {
+  display: flex;
+  flex-direction: column;
+}
+
+.StrategizerHeader {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  font-family: "f-bold";
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.Content {
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Content .WeeklyLeaderboard,
+.Content .OverallLeaderboard {
+  margin: 0 1rem;
+}
+
+.Content .WeeklyLeaderboard {
+  margin-left: auto;
+}
+
+.Content .OverallLeaderboard {
+  margin: 0 auto;
+}
+
+.BoardHeader {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background-color: #6c3136;
+  color: #ffffff;
+  border-radius: 2%;
+  font-size: 1.2rem;
+}
+
+.TableHead {
+  background-color: var(--primary-color);
+}
+
+.TableHead th {
+  color: #ffffff !important;
+}
+
+@media (max-width: 1370px) {
+  .Content {
+    flex-direction: column;
+  }
+  .Content .WeeklyLeaderboard {
+    margin-left: 1rem;
+  }
+
+  .Content .OverallLeaderboard {
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Content {
+    flex-direction: column;
+  }
+  .StrategizerHeader {
+    padding: 2rem 1rem;
+    font-size: 1.5rem;
+  }
+
+  .BoardHeader {
+    margin-bottom: 0.2rem;
+  }
+}

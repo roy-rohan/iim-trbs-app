@@ -1,0 +1,89 @@
+.Footer {
+  background-color: #000000;
+  padding: 5rem 7vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 33.33%;
+}
+
+.Footer .Roles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 5%;
+}
+
+.Footer .LinksSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.Footer .LocationGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+
+.Footer .LocationGroup .TextHead {
+  font-family: "f-bold";
+  margin: 1.5rem 0;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.Footer .LocationGroup .TextDesc {
+  margin: 0.5rem 0;
+  font-size: 0.8rem;
+}
+
+.Footer .Map {
+  border-radius: 0.5rem;
+  height: 300px;
+  cursor: pointer;
+}
+
+.Footer .FooterLinks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.Footer .FooterLinks a {
+  text-decoration: none;
+  margin: 0rem 0.6rem;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+  .Footer {
+    padding: 5rem 5vw;
+    flex-direction: column;
+    flex: 100%;
+  }
+  .Footer .FooterLinks {
+    margin: 1rem 0;
+    justify-content: center;
+  }
+  .Footer .FooterLinks a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Footer .FooterLinks a {
+    font-size: 0.8rem;
+  }
+
+  .Footer .Roles {
+    flex-direction: column;
+    margin-right: 0%;
+  }
+}

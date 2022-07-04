@@ -1,0 +1,127 @@
+import moment from "moment";
+
+export const initalValues = {
+  image_upload: {
+    value: null,
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  name: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    required: true,
+    touched: false,
+  },
+  slug: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    required: true,
+    touched: false,
+  },
+  introduction: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    required: true,
+    touched: false,
+  },
+  image_id: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  designation: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  topic: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  biography: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  duration: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  visible: {
+    value: 0,
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  time: {
+    value: moment(),
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  date: {
+    value: moment(),
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  registration: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  venue: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  view_order: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  is_active: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  show_in_home_page: {
+    value: 0,
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  price: {
+    value: 0,
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  image_url: {
+    value: 0,
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  speaker_id: {
+    value: 0,
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+};

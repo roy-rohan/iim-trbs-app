@@ -1,0 +1,16 @@
+.ActionRows {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 1rem 0;
+}
+
+.ActionButton:nth-child(1) {
+  background-color: var(--primary-color);
+  margin: 0 1rem;
+}
+
+.ActionButton:nth-child(2) {
+  background-color: #d1461f;
+  margin: 0 1rem;
+}

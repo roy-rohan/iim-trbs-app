@@ -1,0 +1,71 @@
+.Dashboard {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.Sidebar {
+  width: min-content;
+  min-width: 200px;
+  border: 2px solid var(--primary-color);
+  height: auto;
+}
+.ListHead {
+  background-color: #ffffff;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.7rem 0;
+  font-size: 1.2rem;
+}
+
+.ListHead p {
+  margin-left: 0.5rem;
+}
+
+.NavLink {
+  background-color: #ffffff;
+}
+
+.ListItem {
+  cursor: pointer;
+}
+
+.DashboardContent {
+  margin: 2rem;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .Sidebar {
+    width: min-content;
+    min-width: 0px;
+    height: auto;
+    background-color: #ffffff;
+    z-index: 99;
+  }
+
+  .DashboardContent {
+    margin: 0rem;
+    position: absolute;
+    left: 16%;
+    width: 84%;
+    overflow-y: scroll;
+    height: 85vh;
+  }
+  .DashboardContent span {
+    font-size: 0.6rem !important;
+  }
+
+  .HideSidebarText p,
+  .HideSidebarText .MenuText,
+  .HideSidebarText .MenuArrow {
+    display: none;
+  }
+
+  .HideSidebarText .MenuIcon {
+    min-width: 0px;
+  }
+}

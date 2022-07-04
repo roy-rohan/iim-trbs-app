@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "f-regular";
+  src: url("./OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "f-light";
+  src: url("./OpenSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "f-semibold";
+  src: url("./OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "f-bold";
+  src: url("./OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "f-extrabold";
+  src: url("./OpenSans-ExtraBold.ttf");
+}

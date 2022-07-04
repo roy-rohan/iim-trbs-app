@@ -1,0 +1,25 @@
+.LoginForm {
+  margin: 2rem auto;
+  width: 30%;
+}
+
+.MaterialUIWrapper {
+  margin: 2rem 0;
+}
+
+.ForgotPassword {
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.ForgotPassword a {
+  text-decoration: none;
+  font-family: "f-semibold";
+}
+
+@media screen and (max-width: 768px) {
+  .LoginForm {
+    margin: 2rem auto;
+    width: 90%;
+  }
+}

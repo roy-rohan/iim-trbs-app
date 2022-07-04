@@ -1,0 +1,56 @@
+.PageHeader {
+  padding: 2.5rem 0;
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.MeetTeam {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 2rem 3rem;
+}
+
+.Card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 20%;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  box-shadow: 18px 18px 36px #aaaaaa, -18px -18px 36px #ffffff;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+  margin: 2rem 1rem;
+  border-radius: 8px;
+}
+
+.Card:hover {
+  top: -2px;
+}
+
+.Image {
+  height: 392px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.TextSection {
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .Card {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .Card {
+    width: 80%;
+  }
+  .MeetTeam {
+    margin: 2rem 1rem;
+  }
+}

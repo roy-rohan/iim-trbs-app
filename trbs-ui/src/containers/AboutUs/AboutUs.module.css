@@ -1,0 +1,98 @@
+.AboutUs {
+  display: flex;
+  flex-direction: column;
+}
+
+.AboutUs .PageHeaderWrapper {
+  padding: 3rem 0;
+  background-color: var(--primary-color);
+}
+
+.PageHeaderWrapper .PageHeading {
+  color: #ffffff;
+  font-family: "f-extrabold";
+  text-align: center;
+}
+
+.ContentWrapper {
+  padding: 2rem 7vw;
+}
+
+.SectionOne {
+  display: flex;
+  flex-direction: row;
+}
+
+.SectionOne .TextSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.SectionOne .TextSection h1 {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.ContentWrapper p {
+  margin-bottom: 2rem;
+  text-align: justify;
+  font-size: 0.9rem;
+}
+
+.EventSection,
+.WorkshopSection,
+.SpeakerSection {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0;
+}
+
+.EventSection h1,
+.WorkshopSection h1,
+.SpeakerSection h1 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.SectionOne .AboutVideo {
+  margin-left: 5vw;
+  margin-top: 4rem;
+}
+
+.SectionOne .AboutVideo img {
+  cursor: pointer;
+}
+
+.CloseBtnWrapper {
+  margin: 1rem auto;
+  margin-bottom: 0;
+}
+
+.CloseBtnWrapper .CloseBtn {
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .ContentWrapper {
+    padding: 2rem 3vw;
+  }
+  .SectionOne {
+    flex-direction: column;
+  }
+
+  .SectionOne .AboutVideo {
+    margin-left: 0vw;
+    margin-top: 4rem;
+  }
+
+  .SectionOne .AboutVideo img {
+    width: 100%;
+  }
+}

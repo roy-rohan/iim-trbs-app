@@ -1,0 +1,109 @@
+.Profile {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 5rem;
+}
+
+.ProfileInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ProfileInfo .ProfileImageSection {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ProfileInfo .ProfileImageSection img {
+  width: 60%;
+  margin-bottom: 1rem;
+  box-shadow: 6px 6px 12px #b1b1b1, -6px -6px 12px #ffffff;
+}
+
+.ProfileInfo .ProfileDetails {
+  width: 66%;
+}
+
+.ProfileDetails {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.ProfileName {
+  font-family: "f-bold";
+  margin-bottom: 1rem;
+}
+
+.ProfileDetails .ProfileDetailAtr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ProfileDetails .ProfileDetailAtrIcon {
+  width: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  margin: 0.2rem;
+  background-color: #e4e4e4;
+  border-radius: 100%;
+}
+
+.ProfileDetails .ProfileDetailAtr p {
+  margin-left: 1rem;
+}
+
+.OtherDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.OtherDetails .TabHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+  border: 1px solid var(--primary-color);
+}
+.OtherDetails .TabHeader .Tab {
+  width: 80%;
+  padding: 0.5rem 1em;
+  border-radius: 2%;
+  cursor: pointer;
+}
+
+.OtherDetails .TabHeader .Tab.ActiveTabItem {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.TabContentContainer {
+  border: 1px solid var(--primary-color);
+  padding: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .Profile {
+    margin: 2rem 1rem;
+  }
+
+  .ProfileInfo {
+    flex-direction: column;
+  }
+
+  .ProfileInfo .ProfileImageSection {
+    width: 80%;
+    margin: auto;
+  }
+  .ProfileInfo .ProfileDetails {
+    width: 100%;
+    margin: 2rem 0;
+  }
+}

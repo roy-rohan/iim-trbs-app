@@ -1,0 +1,97 @@
+.NavigationItems {
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  margin-left: auto;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  transition: all 0.3s ease-in;
+}
+
+.NavigationItems.Close {
+  display: none;
+}
+
+.NavigationItems.Open {
+  display: flex;
+}
+
+.AuthNavigationItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ProfileBtnGrp {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+.Cart {
+  position: relative;
+}
+
+.CartItemCount {
+  position: absolute;
+  top: -45%;
+  font-family: "f-bold";
+  font-size: 0.8rem;
+}
+
+.CartIcon {
+  color: var(--primary-color);
+  margin: auto 0;
+  text-decoration: none;
+}
+
+.MobilePofileBtnGrp {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .NavigationItems {
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    top: 88px;
+    left: 0;
+    padding: 0.2rem 0;
+    z-index: 99;
+  }
+
+  .AuthNavigationItems {
+    margin: 0.5rem 0;
+    justify-content: space-evenly;
+  }
+  .MobilePofileBtnGrp {
+    display: block;
+  }
+
+  .ProfileBtnGrp {
+    display: none;
+  }
+
+  .NavigationItem {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    margin: 0 0.2rem;
+    border-radius: 0.15rem;
+  }
+
+  .NavActive {
+    background-color: var(--primary-color);
+    color: #ffffff;
+  }
+
+  .MobileProfileDetails {
+    display: flex;
+    flex-direction: column;
+  }
+}

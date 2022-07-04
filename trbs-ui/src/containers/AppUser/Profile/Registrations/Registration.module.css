@@ -1,0 +1,44 @@
+.Wrapper {
+  margin: 0 1rem;
+}
+
+.TabHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid var(--primary-color);
+}
+.TabHeader .Tab {
+  width: 80%;
+  padding: 0.5rem 1em; 
+  border-radius: 2%;
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
+}
+
+.TabHeader .Tab.ActiveTabItem {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.TabContentContainer {
+  border: 1px solid var(--primary-color);
+  padding: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .Wrapper {
+    margin: 0 0.5rem;
+  }
+
+  .TabHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .TabHeader .Tab {
+    width: 50%;
+  }
+}

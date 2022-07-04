@@ -1,0 +1,149 @@
+/* @import "mdb-react-ui-kit/dist/css/mdb.min.css"; */
+
+.EventDetail {
+  display: flex;
+  flex-direction: column;
+}
+
+.EventDetail .PageHeaderWrapper {
+  padding: 3rem 0;
+  background-color: var(--primary-color);
+}
+
+.PageHeaderWrapper .PageHeading {
+  color: #ffffff;
+  font-family: "f-bold";
+  text-align: center;
+}
+
+.EventTitle {
+  font-family: "f-bold";
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.Content {
+  margin: 3rem 7vw;
+}
+
+.TopSection {
+  display: flex;
+  flex-direction: row;
+}
+
+.TopSection .EventImage {
+  width: 60vh;
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: 0rem;
+}
+
+.TopSection .TextSection {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.TextSection .EventTitle {
+  color: var(--primary-color);
+}
+
+.TextSection .EventDesc {
+  text-align: left;
+}
+
+.BottomSection {
+  margin: 2rem 0;
+  border: 1px solid var(--primary-color);
+}
+
+.TabContent {
+  text-align: left;
+}
+
+.Tabs {
+  background-color: var(--primary-color);
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.Tabs .TabItem {
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+box-shadow:  1px 1px 1px #c3c3c3,
+             -1px -1px 1px #fdfdfd;
+}
+
+.Tabs .TabItem:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.Tabs .TabItem.ActiveTabItem,
+.Tabs .TabItem.ActiveTabItem:hover {
+  border: none;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.Tabs .TabItem.ActiveTabItem a,
+.Tabs .TabItem.ActiveTabItem a:hover {
+  color: #000000;
+  border: none;
+}
+
+.TabContentWrapper {
+  margin: 0.8rem 1rem;
+}
+
+.TimelineImageSection {
+  width: 100%;
+}
+.EventTimelineImage {
+  max-height: 555px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .Content {
+    margin: 3rem 2vw;
+  }
+
+  .TopSection {
+    flex-direction: column;
+  }
+
+  .TopSection .EventImage {
+    width: 100%;
+  }
+
+  .TopSection .TextSection {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .Tabs {
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0.8rem 0.4rem; 
+  }
+
+  .Tabs .TabItem {
+    flex: none;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    padding: 0.4rem;
+    margin: 0.2rem 0;
+  }
+}

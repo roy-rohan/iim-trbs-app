@@ -1,0 +1,134 @@
+/* @import "mdb-react-ui-kit/dist/css/mdb.min.css"; */
+
+.InformalEventDetail {
+  display: flex;
+  flex-direction: column;
+}
+
+.InformalEventDetail .PageHeaderWrapper {
+  padding: 3rem 0;
+  background-color: var(--primary-color);
+}
+
+.PageHeaderWrapper .PageHeading {
+  color: #ffffff;
+  font-family: "f-bold";
+  text-align: center;
+}
+
+.InformalEventTitle {
+  font-family: "f-bold";
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.Content {
+  margin: 3rem 7vw;
+}
+
+.TopSection {
+  display: flex;
+  flex-direction: row;
+}
+
+.TopSection .InformalEventImage {
+  width: 60vh;
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: 0rem;
+}
+
+.TopSection .TextSection {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.TextSection .InformalEventTitle {
+  color: var(--primary-color);
+}
+
+.TextSection .InformalEventDesc {
+  text-align: left;
+}
+
+.BottomSection {
+  margin: 2rem 0;
+  border: 1px solid var(--primary-color);
+}
+
+.TabContent {
+  text-align: left;
+}
+
+.Tabs {
+  background-color: var(--primary-color);
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.Tabs .TabItem {
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+}
+
+.Tabs .TabItem:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.Tabs .TabItem.ActiveTabItem,
+.Tabs .TabItem.ActiveTabItem:hover {
+  border: none;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.Tabs .TabItem.ActiveTabItem a,
+.Tabs .TabItem.ActiveTabItem a:hover {
+  color: #000000;
+  border: none;
+}
+
+.TabContentWrapper {
+  margin: 0.8rem 1rem;
+}
+
+.TimelineImageSection {
+  width: 100%;
+}
+.InformalEventTimelineImage {
+  max-height: 555px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .Content {
+    margin: 3rem 2vw;
+  }
+
+  .TopSection {
+    flex-direction: column;
+  }
+
+  .TopSection .InformalEventImage {
+    width: 100%;
+  }
+
+  .TopSection .TextSection {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .Tabs {
+    overflow: scroll;
+  }
+
+  .Tabs .TabItem {
+    flex: none;
+  }
+}

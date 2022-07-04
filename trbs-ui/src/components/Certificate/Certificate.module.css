@@ -1,0 +1,57 @@
+.Certificate{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+}
+
+.CertificateImage{
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+    border: 2px solid white;
+    position: absolute;
+}
+
+.DefaultBackImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+    position: absolute;
+    background-color: lightblue;
+}
+
+.CertificateContent{
+    position: absolute;
+    width: 50%;
+    border-radius: 2px;
+    padding: 2rem;
+    border: 1px solid black;
+}
+
+.CenterContent {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.LeftAlignedContent {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.RightAlignedContent {
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+}
+
+@media print {
+    .CertificatePrint{
+        position: relative;
+        width: 90vw;
+        height: 90vh;
+        margin: auto;
+        margin-top: 1rem;
+    }
+}

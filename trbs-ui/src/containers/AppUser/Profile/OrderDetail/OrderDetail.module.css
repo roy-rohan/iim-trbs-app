@@ -1,0 +1,106 @@
+.OrderHeader {
+  padding: 2rem 0;
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.TransactionDetail {
+  width: 50%;
+  margin: 2rem auto;
+}
+
+.TrasactionHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.TransactionStatus {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.TransactionStatus p:first-child {
+  margin-right: 1rem;
+  font-family: "f-bold";
+}
+
+.TransactionId {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.TransactionId p:first-child {
+  margin-right: 1rem;
+  font-family: "f-bold";
+}
+
+.FooterFirstRow {
+  border-top: 2px solid black;
+}
+
+.FooterBlankCell {
+  border: none;
+}
+
+.FooterBillHead {
+  font-family: "f-bold";
+  font-size: 1.1rem;
+  color: var(--primary-color);
+}
+
+.FooterBillValue {
+  font-family: "f-bold";
+  font-size: 1rem;
+}
+
+tr {
+  text-transform: capitalize;
+}
+
+.NoData {
+  margin: 2rem;
+  font-family: "f-bold";
+}
+
+.TransactionFooter {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.TransactionDate {
+  margin-right: auto;
+  text-align: left;
+  font-family: "f-semibold";
+}
+
+.CheckStatus {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.CheckStatus p:first-child {
+  margin-right: 1rem;
+}
+
+.TransactionIdInput {
+  margin: 1.5rem 0;
+}
+
+.CheckStatusButton {
+  margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .TransactionDetail {
+    width: 90%;
+  }
+  .TrasactionHeader {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+}

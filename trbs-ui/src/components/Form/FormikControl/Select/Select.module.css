@@ -1,0 +1,54 @@
+/* General Styles */
+
+.FormControl {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 1rem;
+  margin: 0.8rem 0.3rem;
+  --border-color: #d2d2d2;
+  transition: all 0.5s ease-in;
+}
+
+.FormControl:hover {
+  --border-color: var(--primary-color);
+}
+
+.FormControl select {
+  padding: 0.5rem 0.5rem;
+  border: none;
+  border-left: 2px solid var(--border-color);
+  transition: all 0.2s ease-in;
+}
+
+.FormControl select:hover,
+.FormControl select:focus,
+.FormControl select:active,
+.FormControl select:checked {
+  border: none;
+  border-left: 2px solid var(--primary-color);
+}
+
+/* IconGroup */
+
+.FormControl .IconGroup {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 2px solid var(--border-color);
+  align-items: center;
+  transition: all 0.2s ease-in;
+}
+/* 
+.FormControl .IconGroup:hover {
+  border: 2px solid var(--primary-color);
+} */
+
+.FormControl .IconGroup svg {
+  width: 3rem;
+  color: #5f5581;
+}
+
+.FormControl .IconGroup select {
+  width: 100%;
+}

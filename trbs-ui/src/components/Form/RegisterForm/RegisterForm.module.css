@@ -1,0 +1,46 @@
+.RegisterForm {
+  margin: 2rem auto;
+  width: 35%;
+}
+
+.Form {
+  margin: 2rem 0;
+}
+
+.RegistrationSuccessPage {
+  margin: 3rem auto;
+}
+
+.RegistrationSuccessPage .SuccessIcon {
+  font-size: 4rem;
+  transform: rotate(-30deg);
+  color: green;
+}
+
+.RegistrationSuccessPage .SuccessMessage h1 {
+  margin: 2rem;
+}
+
+.RegistrationSuccessPage .SuccessMessage p {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* .MaterialUIWrapper {
+} */
+
+@media screen and (max-width: 768px) {
+  .RegisterForm {
+    margin: 2rem auto;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .RegisterForm {
+    margin: 2rem auto;
+    width: 90%;
+  }
+}
