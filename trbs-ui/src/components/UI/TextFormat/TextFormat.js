@@ -16,7 +16,6 @@ const TextFormat = (props) => {
     let charLength = content.split("").length;
     let charsAllowed = getCharsAllowed();
   
-    console.log(charsAllowed, charLength)
     if (charsAllowed < charLength) {
       setContent(props.children.substring(0, charsAllowed));
       setLeadingText(

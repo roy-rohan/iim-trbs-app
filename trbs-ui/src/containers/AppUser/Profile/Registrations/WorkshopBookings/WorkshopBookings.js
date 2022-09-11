@@ -158,8 +158,7 @@ class WorkshopBookings extends Component {
       .filter((d) => d.product_type === "workshop")
       .filter((d) => {
         for (let key in this.state.customGridFilters) {
-          console.log(this.state.customGridFilters[key]);
-          return d[key] && d[key] === this.state.customGridFilters[key];
+          return d[key] && d[key].toLowerCase() === this.state.customGridFilters[key].toLowerCase();
         }
         return false;
       })
@@ -175,6 +174,8 @@ class WorkshopBookings extends Component {
           orderId: workshop.order_id,
         };
       });
+    
+
     return (
       <div>
         <div className={classes.CustomFilterContainer}>
@@ -196,13 +197,14 @@ class WorkshopBookings extends Component {
             </FormControl>
           </div>
         </div>
-        <DataGrid
-          rows={workshops}
-          columns={columns}
-          pageSize={5}
-          autoHeight
-          disableSelectionOnClick
-        />
+        <div style={{height: "300px"}}>
+          <DataGrid
+            rows={workshops}
+            columns={columns}
+            rowHeight="60"
+            disableSelectionOnClick
+          />
+        </div>
       </div>
     );
   }

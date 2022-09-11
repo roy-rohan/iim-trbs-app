@@ -18,7 +18,6 @@
 }
 
 .ProfileInfo .ProfileImageSection img {
-  width: 60%;
   margin-bottom: 1rem;
   box-shadow: 6px 6px 12px #b1b1b1, -6px -6px 12px #ffffff;
 }
@@ -35,6 +34,13 @@
 
 .ProfileName {
   font-family: "f-bold";
+}
+
+.ProfileNameGrp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 1rem;
 }
 
@@ -87,6 +93,10 @@
 .TabContentContainer {
   border: 1px solid var(--primary-color);
   padding: 1rem 0;
+}
+
+.ProfileImage {
+  width: 100%;
 }
 
 @media (max-width: 768px) {

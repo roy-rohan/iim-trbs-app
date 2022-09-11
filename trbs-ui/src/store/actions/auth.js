@@ -102,6 +102,54 @@ export const activateAccount = (token, cb) => {
   };
 };
 
+export const loginHandlerWithCB = (token, cb) => {
+  return (dispatch) => {
+    axios
+      .post(
+        "/users/read_single.php",
+        JSON.stringify({ token: "Bearer " + token })
+      )
+      .then((userResponse) => {
+        localStorage.setItem("token", token);
+        localStorage.setItem("user", JSON.stringify(userResponse.data));
+        let authRedirectPath = "/profile";
+        if (userResponse.data.role === "admin") authRedirectPath = "/dashboard";
+        axios
+          .get(`/users/cart/read_single.php?id=${userResponse.data.cart_id}`)
+          .then((cartData) => {
+            localStorage.setItem("cart", JSON.stringify(cartData.data));
+            dispatch(
+              sendMessage("Welcome " + userResponse.data.first_name, "success")
+            );
+            dispatch(
+              authSuccess(
+                token,
+                userResponse.data,
+                cartData.data,
+                authRedirectPath
+              )
+            );
+          })
+          .catch((error) => {
+            const errorMessage = error.response?.data?.message
+              ? error.response?.data?.message
+              : "Autentication Failed.";
+            dispatch(sendMessage(errorMessage, "error"));
+          }).finally(() => {
+            cb();
+          });
+      })
+      .catch((error) => {
+        const errorMessage = error.response?.data?.message
+          ? error.response?.data?.message
+          : "Autentication Failed.";
+        dispatch(sendMessage(errorMessage, "error"));
+        cb();
+      });
+  };
+
+}
+
 export const loginHandler = (token) => {
   return (dispatch) => {
     axios
@@ -146,11 +194,11 @@ export const loginHandler = (token) => {
   };
 };
 
-export const updateUser = (token, userData) => {
+export const updateUser = (token, userData, cb) => {
   return (dispatch) => {
-    userData.token = token;
+    userData.token = "Bearer " + token;
     axios
-      .post("/users/update.php")
+      .post("/users/update.php", JSON.stringify(userData))
       .then((data) => {
         dispatch(sendMessage("User has been updated succcessfully", "success"));
         localStorage.setItem("user", JSON.stringify(data));
@@ -165,6 +213,8 @@ export const updateUser = (token, userData) => {
           user: userData,
         });
         dispatch(sendMessage("Something went wrong", "error"));
+      }).finally(() => {
+        cb();
       });
   };
 };

@@ -63,6 +63,7 @@ export {
   loginHandler,
   logout,
   fetchUser,
+  updateUser
 } from "./auth";
 export {
   fetchCartById,

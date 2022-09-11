@@ -16,6 +16,7 @@ import { AccountCircle, Visibility, VisibilityOff } from "@material-ui/icons";
 import * as actions from "../../../store/actions/auth";
 import { connect } from "react-redux";
 import { NavLink, Redirect } from "react-router-dom";
+import GoogleSignin from "../GoogleSignin/GoogleSignin";
 
 const LoginForm = (props) => {
   const [values, setValues] = React.useState({
@@ -131,6 +132,9 @@ const LoginForm = (props) => {
           </Form>
         )}
       </Formik>
+      <div>
+        <GoogleSignin formName={"Login"} />
+      </div>
     </div>
   );
 };

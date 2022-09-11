@@ -39,6 +39,7 @@ import WorkshopDetail from "./containers/Workshops/WorkshopDetail/WorkshopDetail
 import InformalEventDetail from "./containers/InformalEvents/InformalEventDetail/InformalEventDetail";
 import SpeakerDetail from "./containers/Speakers/SpeakerDetail/SpeakerDetail";
 import ConnextionDetail from "./containers/Connexions/ConnexionDetail/ConnextionDetail";
+import EditProfile from "./containers/AppUser/Profile/EditProfile/EditProfile";
 
 class App extends Component {
   state = {
@@ -169,6 +170,7 @@ class App extends Component {
     if (this.props.isAutenticated) {
       let authenticatedRoutes = [
         <Route key="/profile" path="/profile" exact component={Profile} />,
+        <Route key="/profile/edit" path="/profile/edit" exact component={EditProfile} />,
         <Route key="/cart" path="/cart" exact component={Cart} />,
         <Route
         key="/orderdetail/:id"

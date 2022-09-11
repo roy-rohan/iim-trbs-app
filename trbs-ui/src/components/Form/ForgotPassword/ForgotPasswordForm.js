@@ -12,6 +12,8 @@ import React, { useState } from "react";
 import * as Yup from "yup";
 import classes from "./ForgotPasswordForm.module.css";
 import axios from "../../../axios-iim";
+import * as actions from "../../../store/actions/index";
+import { connect } from "react-redux";
 
 const ForgotPasswordForm = (props) => {
   const initialValues = {
@@ -34,9 +36,12 @@ const ForgotPasswordForm = (props) => {
         })
       )
       .then((response) => {
+        form.setSubmitting(false);
         setIsRequestSuccess(true);
       })
       .catch((error) => {
+        form.setSubmitting(false);
+        props.onSendMessage(error.response?.data?.message, "error");
         setIsRequestSuccess(false);
       });
   };
@@ -92,7 +97,7 @@ const ForgotPasswordForm = (props) => {
               className={classes.button}
               type="submit"
             >
-              {formik.isSubmitting && !props.hasError ? "..." : "Submit"}
+              {formik.isSubmitting ? "..." : "Submit"}
             </Button>
           </Form>
         )}
@@ -101,4 +106,11 @@ const ForgotPasswordForm = (props) => {
   );
 };
 
-export default ForgotPasswordForm;
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onSendMessage: (message, messageType) =>
+      dispatch(actions.sendMessage(message, messageType)),
+  };
+};
+
+export default connect(null, mapDispatchToProps)(ForgotPasswordForm);

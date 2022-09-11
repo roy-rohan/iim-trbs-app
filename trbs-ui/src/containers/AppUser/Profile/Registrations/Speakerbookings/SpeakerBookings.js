@@ -196,13 +196,14 @@ class SpeakerBookings extends Component {
             </FormControl>
           </div>
         </div>
-        <DataGrid
-          rows={speakers}
-          columns={columns}
-          pageSize={5}
-          autoHeight
-          disableSelectionOnClick
-        />
+        <div style={{height: "300px"}}>
+          <DataGrid
+            rows={speakers}
+            columns={columns}
+            rowHeight="60"
+            disableSelectionOnClick
+          />
+        </div>
       </div>
     );
   }

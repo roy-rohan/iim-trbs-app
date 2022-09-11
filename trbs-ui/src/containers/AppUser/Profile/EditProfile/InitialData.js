@@ -1,0 +1,95 @@
+export const initalValues = {
+  app_user_id: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    required: true,
+    touched: false,
+  },
+  first_name: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  last_name: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  email_id: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    required: true,
+    touched: false,
+  },
+  mobile_no: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  year: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  address: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  college: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  college_id: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  login_id: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  state_id: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    required: true,
+    touched: false,
+  },
+  role: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  updated_by: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  is_active: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    touched: false,
+  },
+  profile_image_id: {
+    value: "",
+    error: false,
+    errorMessage: "",
+    touched: false,
+  }
+};

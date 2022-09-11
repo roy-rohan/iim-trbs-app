@@ -28,6 +28,9 @@ import {
   VisibilityOff,
 } from "@material-ui/icons";
 import { useToasts } from "react-toast-notifications";
+import GoogleSignin from "../GoogleSignin/GoogleSignin";
+import { connect } from "react-redux";
+import { Redirect } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   input: {
@@ -76,12 +79,15 @@ const RegisterForm = (props) => {
   };
 
   const validationSchema = Yup.object({
-    first_name: Yup.string().required("Required"),
-    email_id: Yup.string().required("Required").email("Not a valid email."),
+    first_name: Yup.string().required("Required")
+      .matches(/^([a-zA-Z.]{2,30})$/, "Invalid value"),
+    last_name: Yup.string().required("Required")
+      .matches(/^([a-zA-Z.]{2,30})$/, "Invalid value"),
+    email_id: Yup.string().required("Required").email("Not a valid email"),
     mobile_no: Yup.string()
       .required("Required")
       .matches(/^[6-9][0-9]{9}$/, "Not a valid phone number."),
-    year: Yup.number().min(1, "Invalid Year"),
+    year: Yup.number().min(2018, "Minimum allowed Year is 2018").max(2030, "Maximum allowed Year is 2030"),
     password: Yup.string().required("Required"),
   });
 
@@ -186,7 +192,9 @@ const RegisterForm = (props) => {
       });
   }, []);
 
-  return registrationStatus ? (
+  return props.isAuthenticated ? (
+    <Redirect to={props.authRedirectPath} />
+  ) : registrationStatus ? (
     <div className={classes.RegistrationSuccessPage}>
       <Send className={classes.SuccessIcon}></Send>
       <div className={classes.SuccessMessage}>
@@ -543,7 +551,18 @@ const RegisterForm = (props) => {
           </Form>
         )}
       </Formik>
+      <div>
+        <GoogleSignin formName={"Register"} />
+      </div>
     </div>
   );
 };
-export default RegisterForm;
+
+const mapStateToProps = (state) => {
+  return {
+    isAuthenticated: state.auth.token !== null,
+    authRedirectPath: state.auth.authRedirectPath,
+  };
+};
+
+export default connect(mapStateToProps)(RegisterForm);

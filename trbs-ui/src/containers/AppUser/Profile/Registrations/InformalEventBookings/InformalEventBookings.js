@@ -196,13 +196,14 @@ class InformalEventBookings extends Component {
             </FormControl>
           </div>
         </div>
-        <DataGrid
-          rows={informalEvents}
-          columns={columns}
-          pageSize={5}
-          autoHeight
-          disableSelectionOnClick
-        />
+        <div style={{height: "300px"}}>
+          <DataGrid
+            rows={informalEvents}
+            columns={columns}
+            rowHeight="60"
+            disableSelectionOnClick
+          />
+        </div>
       </div>
     );
   }

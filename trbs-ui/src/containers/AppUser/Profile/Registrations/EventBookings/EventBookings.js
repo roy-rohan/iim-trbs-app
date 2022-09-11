@@ -196,13 +196,14 @@ class EventBookings extends Component {
             </FormControl>
           </div>
         </div>
-        <DataGrid
-          rows={events}
-          columns={columns}
-          pageSize={5}
-          autoHeight
-          disableSelectionOnClick
-        />
+        <div style={{height: "300px"}}>
+          <DataGrid
+            rows={events}
+            columns={columns}
+            rowHeight="60"
+            disableSelectionOnClick
+          />
+        </div>
       </div>
     );
   }

@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "@material-ui/core";
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { NavLink } from "react-router-dom";
 import DefaultImage from "../../../assets/images/common/default.png";
 import CustomImage from "../../../components/UI/CustomImage/CustomImage";
 import * as actions from "../../../store/actions/index";
@@ -57,17 +58,19 @@ class Profile extends Component {
   }
 
   render() {
+    console.log(this.props.user)
     return (
       <div className={classes.Profile}>
         <div className={classes.ProfileInfo}>
           <div className={classes.ProfileImageSection}>
-            <div className={classes.ProfileImage}>
+            <div className={classes.ProfileImageWrapper}>
               <CustomImage
                 src={
-                  this.props.user.profile_image
-                    ? this.props.user.profile_image
-                    : DefaultImage
+                  this.props.user.profile_image ? this.props.user.profile_image 
+                    : this.props.user.profile_image_url ? this.props.user.profile_image_url : DefaultImage
                 }
+                noLazyLoad={true}
+                cssClass={classes.ProfileImage}
                 useCustomSrc={this.props.user.profile_image ? false : true}
                 alt="Profile"
               />
@@ -88,7 +91,17 @@ class Profile extends Component {
             </Button>
           </div>
           <div className={classes.ProfileDetails}>
-            <p className={classes.ProfileName}>{this.props.user.first_name}</p>
+            <div className={classes.ProfileNameGrp}>
+              <p className={classes.ProfileName}>{this.props.user.first_name} {this.props.user.last_name}</p>
+              <Button variant="contained" size="small" color="primary">
+                <NavLink
+                  to={"/profile/edit"}
+                  style={{ textDecoration: "none", color: "#ffffff" }}
+                >
+                  Edit Profile
+                </NavLink>
+              </Button>
+            </div>
             <div className={classes.ProfileAttributes}>
               <div className={classes.ProfileDetailAtr}>
                 <div className={classes.ProfileDetailAtrIcon}>
